@@ -1,0 +1,39 @@
+AddDefaultCharset utf-8
+
+## Файл индексного документа
+#DirectoryIndex index.shtml index.html index.htm index.php
+
+## Воспринимать файлы *.html как SSI
+#AddHandler server-parsed .html
+
+## Включить парсинг SSI выражений в устаревшем формате
+#SSILegacyExprParser on
+
+## Разрешение вывода содержимого каталога
+#Options +Indexes
+
+## Не писать в access.log информацию о файлах *.gif и *.jpg
+#SetEnvIf Request_URI \.gif$ access_log
+#SetEnvIf Request_URI \.jpg$ access_log
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-store, no-cache"
+</IfModule>
+
+#<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	#RewriteCOnd %{HTTP_HOST} ^www.nikos.ho.ua
+	#RewriteRule (.*) https://nikos.ho.ua
+	#RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+	#RewriteRule ^index\.php$ https://nikos.ho.ua/ [R=301,L]
+#</IfModule>
+
+ServerSignature Off
+
+RewriteRule ^index?$ index.php [NC,L]
+RewriteRule ^ad?$ ad.php [NC,L]
+RewriteRule ^kontakti?$ kontakti.php [NC,L]
+
+# Not found
+ErrorDocument 404 /404.php
