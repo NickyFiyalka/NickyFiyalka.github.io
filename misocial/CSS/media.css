@@ -1,0 +1,146 @@
+@media (min-width:1900px) {
+	html {
+		font-size: 11px;
+	}
+
+	.price-tag {
+		width: 33rem;
+	}
+
+	.menu ul {
+		font-size: 1.8rem;
+	}
+
+	.social-href a {
+		font-size: 2rem;
+	}
+
+}
+
+@media (max-width:1899px) and (min-width:1400px) {
+	html {
+		font-size: 11px;
+	}
+
+	.price-tag {
+		width: 31%;
+		max-width: 35rem;
+	}
+
+	.menu ul {
+		font-size: 1.6rem;
+	}
+
+	.social-href a {
+		font-size: 2rem;
+	}
+
+}
+
+@media (max-width:1399px) and (min-width:1200px) {
+	html {
+		font-size: 10px;
+	}
+
+	.price-tag {
+		width: 31%;
+		max-width: 35rem;
+	}
+
+	.menu ul {
+		font-size: 1.5rem;
+	}
+
+	.social-href a {
+		font-size: 1.5rem;
+	}
+
+}
+
+@media (max-width:1199px) and (min-width:990px) {
+	html {
+		font-size: 8px;
+	}
+
+	.price-tag {
+		max-width: 33rem;
+	}
+
+	.menu ul {
+		font-size: 1.6rem;
+	}
+
+	.social-href a {
+		font-size: 2rem;
+	}
+
+}
+
+@media (min-width:990px) {
+	.m-menu-link {
+		display: none;
+	}
+
+}
+
+@media (max-width:989px) {
+	html {
+		font-size: 9px;
+	}
+
+	.m-menu-link {
+		display: block;
+	}
+
+	.visible-lg {
+		display: none;
+	}
+
+	.get-started-btn {
+		margin: 0;
+	}
+
+	.price-tags {
+		flex-direction: column;
+	}
+
+	.price-tag {
+		width: 90%;
+		margin: 2rem auto;
+	}
+
+	.price-tag span {
+		font-size: 2rem;
+	}
+
+	.price-tag h3 {
+		font-size: 3rem;
+	}
+
+	.price-tag p {
+		font-size: 1.5rem;
+	}
+
+	.price-tag button {
+		font-size: 2rem;
+	}
+
+	.footer-menu {
+		display: none;
+	}
+
+	.blockUP {
+		justify-content: center;
+		height: 5vh;
+	}
+
+	.social-href a {
+		font-size: 3rem;
+	}
+
+	.legal {
+		flex-direction: column;
+		padding-bottom: 1rem;
+	}
+
+}
