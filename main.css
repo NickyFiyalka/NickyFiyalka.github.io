@@ -130,46 +130,12 @@ main h2 {
 }
 
 .news {
-	width: 65%;
+	width: 30%;
 	padding: 10px;
 }
 
 .news>a>.btn {
 	width: 170px;
 	text-align: center;
-}
-
-.articles {
-	display: flex;
-	flex-flow: wrap;
-	justify-content: center;
-
-}
-
-article {
-	box-sizing: border-box;
-	width: 46%;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 1%;
-	margin: 2%;
-	border: 1px solid #e3e3e3;
-	background-color: #fff;
-	box-sizing: border-box;
-	max-width: 350px;
-	border-radius: 9px;
-}
-
-article img {
-	border-radius: 5px 5px 0 0;
-	margin: auto;
-}
-
-article span {
-	font-family: 'Roboto Slab', serif;
-	font-size: 1.3em;
-	margin: 7px 5%;
-	color: #333;
 }
 
