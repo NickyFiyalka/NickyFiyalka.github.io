@@ -72,11 +72,28 @@ header a:hover {
 	color: white;
 }
 
+
 header span {
 	font-size: 2.5em;
 	margin-left: 10px;
 	font-family: 'Suez One', serif;  /*Підібрати нормальні шрифти*/
 }
+
+header img {
+	width: 115px;
+}
+
+/*=======================================================================*/
+.logo {
+	flex-grow: 2;
+}
+
+.logo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 
 
@@ -88,5 +105,71 @@ main {
 main h2 {
 	display: inline-block;
 	border-bottom: 2px solid #db6e6e;
+}
+
+.news h2 {
+	margin: 0 5%;
+}
+
+.news a {
+	display: flex;
+	justify-content: center;
+}
+
+.heading {
+	font-weight: lighter;
+	font-size: 1.4em;
+	font-family: 'Roboto Slab', serif;
+	color: #4f4f4f;
+	padding: 0 5px;
+	margin: 10px 0;
+}
+
+.heading:first-letter {
+	color: #db6e6e;
+}
+
+.news {
+	width: 65%;
+	padding: 10px;
+}
+
+.news>a>.btn {
+	width: 170px;
+	text-align: center;
+}
+
+.articles {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+
+}
+
+article {
+	box-sizing: border-box;
+	width: 46%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 1%;
+	margin: 2%;
+	border: 1px solid #e3e3e3;
+	background-color: #fff;
+	box-sizing: border-box;
+	max-width: 350px;
+	border-radius: 9px;
+}
+
+article img {
+	border-radius: 5px 5px 0 0;
+	margin: auto;
+}
+
+article span {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.3em;
+	margin: 7px 5%;
+	color: #333;
 }
 
