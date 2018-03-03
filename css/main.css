@@ -81,7 +81,7 @@ header {
 	left: calc(50% - 24px); /*Вирівнювання елемента точно по середині*/
 }
 
-.headerArrow i {
+.headerArrow a {
 	color: #FFF;
 	text-decoration: none;
 }
