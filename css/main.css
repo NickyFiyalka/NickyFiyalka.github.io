@@ -276,7 +276,7 @@ div.footerSocialIcons a:nth-child(5):hover {
 MEDIA
 ...................................................
 .................................................... */
-@media (max-width:1160px) and (min-width: 769px) {
+@media (max-width:1160px)  {
 	.section {
 		width: 100%;
 	}
@@ -300,7 +300,7 @@ MEDIA
 	}
 
 	.headerTitle {
-		font-size: 38px;
+		font-size: 44px;
 		line-height: 48px;
 		margin-bottom: 15px;
 	}
@@ -337,7 +337,7 @@ MEDIA BEFORE 768px
 ...................................................
 .................................................... */
 
-@media (max-width:768px) and (min-width: 426px) {
+@media (max-width:768px) {
 	.headerTitle {
 		font-size: 35px;
 		line-height: 34px;
@@ -361,6 +361,7 @@ MEDIA BEFORE 768px
 		font-size: 38px;
 		margin-bottom: 24px;
 	}
+
 
 	.col-4 {
 		margin-bottom: 30px;
