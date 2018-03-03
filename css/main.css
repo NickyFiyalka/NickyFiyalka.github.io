@@ -275,6 +275,10 @@ MEDIA
 		text-align: center;
 	}
 
+/*	.col-4 img {
+		width: 100%;
+	}
+*/
 	.col-4 .footerSocialIcons {
 		width: 50%;
 		padding: 0 25%;
@@ -282,5 +286,26 @@ MEDIA
 
 	.headerTitle {
 		font-size: 38px;
+		line-height: 48px;
+		margin-bottom: 15px;
+	}
+
+	.headerText {
+		font-size: 22px;
+		line-height: 38px;
+	}
+
+	.portfolio {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+
+	.porfolioTitle {
+		font-size: 36px;
+	}
+
+	footer {
+		padding-top: 70px;
+		padding-bottom: 60px;
 	}
 }
