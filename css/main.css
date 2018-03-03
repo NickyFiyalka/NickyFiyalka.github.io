@@ -184,13 +184,6 @@ div.footerSocialIcons a:nth-child(4):hover {
 	color: #6d84b4;
 }
 
-div.footerSocialIcons a:nth-child(5):hover {
-	display: inline-block;
-	line-height: 1;
-	background: yellow;
-	border-radius: 5px;
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}﻿
 
 .button {
 	font-weight: 700;
@@ -208,4 +201,12 @@ div.footerSocialIcons a:nth-child(5):hover {
 .button:hover {
 	color: #061634;
 	background-color: #fff;
+}
+
+div.footerSocialIcons a:nth-child(5):hover {
+	display: inline-block;
+	line-height: 1;
+	background: yellow;
+	border-radius: 5px;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
