@@ -276,7 +276,7 @@ div.footerSocialIcons a:nth-child(5):hover {
 MEDIA
 ...................................................
 .................................................... */
-@media (max-width:1160px) {
+@media (max-width:1160px) and (min-width: 769px) {
 	.section {
 		width: 100%;
 	}
@@ -309,6 +309,11 @@ MEDIA
 		font-size: 22px;
 		line-height: 38px;
 	}
+	
+	.headerArrow {
+		font-size: 40px;
+		left: calc(50% - 20px);
+	}
 
 	.portfolio {
 		padding-top: 40px;
@@ -321,7 +326,134 @@ MEDIA
 
 	footer {
 		padding-top: 70px;
-		padding-bottom: 60px;
+		padding-bottom: 30px;
 	}
 
+}
+
+/* ...................................................
+...................................................
+MEDIA BEFORE 768px
+...................................................
+.................................................... */
+
+@media (max-width:768px) and (min-width: 426px) {
+	.headerTitle {
+		font-size: 35px;
+		line-height: 34px;
+	}
+
+	.headerText {
+		font-size: 20px;
+		line-height: 34px;
+	}
+
+	.headerArrow {
+		font-size: 32px;
+		left: calc(50% - 16px);
+	}
+	
+	.portfolio {
+		padding-top: 24px;
+	}
+	
+	.porfolioTitle {
+		font-size: 38px;
+		margin-bottom: 24px;
+	}
+
+	.col-4 {
+		margin-bottom: 30px;
+	}
+
+	.portfolio-Item-Img {
+		margin-bottom: 10px;
+	}
+
+	footer {
+		padding-top: 40px;
+		padding-bottom: 10px;
+	}
+	
+	p.footerName {
+		margin-bottom: 8px;
+	}
+
+	footer p {
+		margin-bottom: 5px;
+	}
+
+	.button {
+		margin-bottom: 10px;
+	}
+}
+
+
+/* ...................................................
+...................................................
+MEDIA BEFORE 425px
+...................................................
+.................................................... */
+
+@media (max-width:425px) {
+	.headerTitle {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.headerText {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.headerArrow {
+		font-size: 26px;
+		left: calc(50% - 13px);
+	}
+	
+	.portfolio {
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+	
+	.porfolioTitle {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.col-4 {
+		margin-bottom: 25px;
+	}
+
+	.portfolio-Item-Img {
+		margin-bottom: 5px;
+	}
+
+	footer {
+		padding-top: 30px;
+		padding-bottom: 0px;
+	}
+	
+	p.footerName {
+		margin-bottom: 3px;
+	}
+
+	footer p {
+		margin-bottom: 0;
+	}
+
+	.button {
+		margin-bottom: 5px;
+	}
+}
+
+/* ...................................................
+...................................................
+MEDIA BEFORE 340px
+...................................................
+.................................................... */
+@media (max-width:340px) {
+	.visible {
+		display: none;
+	}
 }
