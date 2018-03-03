@@ -10,7 +10,7 @@ html {
 
 header {
 	background: #003254;	/*	Колір фону при відсутності картинки*/
-	background-image: url("../img/bg/bg-header.jpg");	/*Фонова картинка*/
+	background-image: url("../img/bg/bg.jpg");	/*Фонова картинка*/
 	background-repeat: no-repeat;	/*	Скасування повторення картинки*/
 	background-position: center;	/*Позиціювання*/
 	background-size: cover;	/*Масштабування зображення зі збереженням пропорцій по всій ширині і висоті блоку*/
@@ -46,3 +46,4 @@ header {
 	bottom: 50px;
 	left: calc(50% - 24px); /*Вирівнювання елемента точно по середині*/
 }
+
