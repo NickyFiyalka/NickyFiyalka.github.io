@@ -16,6 +16,10 @@ a {
 	transition: 0.3s ease-out;
 }
 
+* {
+	/*box-sizing: border-box;*/
+}
+
 /* ...................................................
 GRID
 Переписати сітку на флексбоксах!!!
@@ -208,11 +212,6 @@ div.footerSocialIcons a {
 	text-decoration: none;	
 }
 
-div.footerSocialIcons a:hover {
-
-	/*color: yellow;*/
-}
-
 div.footerSocialIcons a:nth-child(1):hover {
 	color: #507299;
 }
@@ -258,3 +257,30 @@ div.footerSocialIcons a:nth-child(5):hover {
 	background-color: #fff;
 }
 
+/* ...................................................
+MEDIA
+.................................................... */
+
+@media (max-width: 1160px) {
+	.section {
+		width: 100%;
+	}
+
+	.col-4 {
+		width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+		margin-bottom: 30px;
+		padding: 0 15px;
+		text-align: center;
+	}
+
+	.col-4 .footerSocialIcons {
+		width: 50%;
+		padding: 0 25%;
+	}
+
+	.headerTitle {
+		font-size: 38px;
+	}
+}
