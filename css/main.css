@@ -1,9 +1,9 @@
 /*
 	font-family: 'Merriweather', serif;
-	font-family: 'PT Sans Caption', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 */
 html {
-	font-family: 'PT Sans Caption', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 16px;
 	line-height: 1.5;
 	min-width: 320px;
@@ -22,8 +22,10 @@ a {
 }
 
 /* ...................................................
+...................................................
 GRID
 Переписати сітку на флексбоксах!!!
+...................................................
 .................................................... */
 .section {
 	width: 1140px;
@@ -51,7 +53,9 @@ GRID
 }
 
 /* ...................................................
+...................................................
 HEADER
+...................................................
 .................................................... */
 header {
 	background: #003254;	/*	Колір фону при відсутності картинки*/
@@ -89,7 +93,6 @@ header {
 	position: absolute;  /*Позиціювання елемента відносно видимої частини сторінки*/
 	bottom: 200px;
 	left: calc(50% - 24px); /*Вирівнювання елемента точно по середині*/
-
 }
 
 .headerArrow a {
@@ -98,7 +101,9 @@ header {
 }
 
 /* ...................................................
+...................................................
 PORTFOLIO
+...................................................
 .................................................... */
 .portfolio {
 	padding: 70px 0 100px 0;
@@ -146,9 +151,10 @@ PORTFOLIO
 }
 
 /* ...................................................
+...................................................
 PORFOLIO SINGLE PAGE
+...................................................
 .................................................... */
-
 .portfolio-single-page {
 	padding: 50px 0;
 	text-align: center;
@@ -179,9 +185,10 @@ PORFOLIO SINGLE PAGE
 	background-color: #061634;
 }
 
-
 /* ...................................................
+...................................................
 FOOTER
+...................................................
 .................................................... */
 footer {
 	background-color: #061634;
@@ -217,7 +224,7 @@ div.footerSocial {
 div.footerSocialIcons a {
 	color: #FFF;
 	font-size: 32px;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 div.footerSocialIcons a:nth-child(1):hover {
@@ -245,7 +252,6 @@ div.footerSocialIcons a:nth-child(5):hover {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
-
 .button {
 	font-weight: 700;
 	text-decoration: none;
@@ -266,10 +272,11 @@ div.footerSocialIcons a:nth-child(5):hover {
 }
 
 /* ...................................................
+...................................................
 MEDIA
+...................................................
 .................................................... */
-
-@media (max-width: 1160px) {
+@media (max-width:1160px) {
 	.section {
 		width: 100%;
 	}
@@ -288,8 +295,8 @@ MEDIA
 	}
 
 	header {
-		padding-left: 15px;   
-		padding-right: 15px;	
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.headerTitle {
@@ -316,4 +323,5 @@ MEDIA
 		padding-top: 70px;
 		padding-bottom: 60px;
 	}
+
 }
