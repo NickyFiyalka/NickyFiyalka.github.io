@@ -236,7 +236,7 @@ div.footerSocialIcons a:nth-child(2):hover {
 }
 
 div.footerSocialIcons a:nth-child(3):hover {
-	color: #bb0000;
+	color: rgb(255, 0, 0);
 }
 
 div.footerSocialIcons a:nth-child(4):hover {
