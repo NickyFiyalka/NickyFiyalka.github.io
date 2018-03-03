@@ -91,7 +91,7 @@ header {
 .headerArrow {
 	font-size: 48px;
 	position: absolute;  /*Позиціювання елемента відносно видимої частини сторінки*/
-	bottom: 200px;
+	bottom: 1px;
 	left: calc(50% - 24px); /*Вирівнювання елемента точно по середині*/
 }
 
