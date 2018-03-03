@@ -2,11 +2,47 @@
 	font-family: 'Merriweather', serif;
 	font-family: 'PT Sans Caption', sans-serif;
 */
-
-
 html {
-	font-family: 'PT Sans Caption', sans-serif;	
+	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 }
 
+header {
+	background: #003254;	/*	Колір фону при відсутності картинки*/
+	background-image: url("../img/bg/bg-header.jpg");	/*Фонова картинка*/
+	background-repeat: no-repeat;	/*	Скасування повторення картинки*/
+	background-position: center;	/*Позиціювання*/
+	background-size: cover;	/*Масштабування зображення зі збереженням пропорцій по всій ширині і висоті блоку*/
+	height: 100vh; /*Висота header на всю висоту видимої сторінки*/
+	color: #FFF;
+	text-align: center;	/*Позиціювання тексту по середині*/
+
+	/*FLEX*/
+	display: flex;	/*Позиціювання елекментів flex*/
+	flex-direction: column; /*Позиціювання стрічкою*/
+	align-items: center;	/*Вирівнювання блоків по вертикалі*/
+	justify-content: center;	/*Вирівнювання блоків по горизонталі*/
+
+	/*Позиціювання */
+	position: relative;
+}
+
+.headerTitle {
+	font-size: 56px;
+	line-height: 62px;
+	margin-bottom: 30px;
+	font-family: 'Merriweather', serif;
+}
+
+.headerText {
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.headerArrow {
+	font-size: 48px;
+	position: absolute;  /*Позиціювання елемента відносно видимої частини сторінки*/
+	bottom: 50px;
+	left: calc(50% - 24px); /*Вирівнювання елемента точно по середині*/
+}
