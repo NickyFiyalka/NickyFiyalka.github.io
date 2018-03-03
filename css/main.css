@@ -282,12 +282,16 @@ MEDIA
 	}
 
 	.col-4 {
-		width: 100%;
+		width: 50%;
 		box-sizing: border-box;
 		margin: 0;
 		margin-bottom: 30px;
 		padding: 0 15px;
 		text-align: center;
+	}
+
+	.col-4:last-child {
+		width: 100%;
 	}
 
 	.col-4 .footerSocialIcons {
@@ -338,6 +342,25 @@ MEDIA BEFORE 768px
 .................................................... */
 
 @media (max-width:768px) {
+
+
+	.section {
+		width: 100%;
+	}
+
+	.col-4 {
+		width: 100%;
+		box-sizing: border-box;
+		margin: 0;
+		margin-bottom: 30px;
+		padding: 0 15px;
+		text-align: center;
+	}
+
+	.col-4 .footerSocialIcons {
+		margin: 0 auto;
+	}
+
 	.headerTitle {
 		font-size: 35px;
 		line-height: 34px;
