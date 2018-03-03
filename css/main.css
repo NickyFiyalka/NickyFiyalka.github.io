@@ -6,6 +6,7 @@ html {
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	min-width: 320px;
 }
 
 img {
@@ -17,7 +18,7 @@ a {
 }
 
 * {
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 }
 
 /* ...................................................
@@ -59,6 +60,7 @@ header {
 	background-position: center;	/*Позиціювання*/
 	background-size: cover;	/*Масштабування зображення зі збереженням пропорцій по всій ширині і висоті блоку*/
 	height: 100vh; /*Висота header на всю висоту видимої сторінки*/
+	min-height: 400px;
 	color: #FFF;
 	text-align: center;	/*Позиціювання тексту по середині*/
 
@@ -126,6 +128,11 @@ PORTFOLIO
 
 .portfolio-Item-Img {
 	margin-bottom: 17px;
+}
+
+.portfolio-Item-Img img {
+	max-width: 100%;
+	height: auto;
 }
 
 .portfolio-Item-Title {
@@ -204,6 +211,7 @@ div.footerSocial {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	max-width: 400px
 }
 
 div.footerSocialIcons a {
@@ -275,13 +283,13 @@ MEDIA
 		text-align: center;
 	}
 
-/*	.col-4 img {
-		width: 100%;
-	}
-*/
 	.col-4 .footerSocialIcons {
-		width: 50%;
-		padding: 0 25%;
+		margin: 0 auto;
+	}
+
+	header {
+		padding-left: 15px;   
+		padding-right: 15px;	
 	}
 
 	.headerTitle {
