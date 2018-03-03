@@ -16,7 +16,7 @@ img {
 GRID
 Переписати сітку на флексбоксах!!!
 .................................................... */
-section {
+.section {
 	width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
@@ -183,7 +183,6 @@ div.footerSocialIcons a:nth-child(3):hover {
 div.footerSocialIcons a:nth-child(4):hover {
 	color: #6d84b4;
 }
-
 
 .button {
 	font-weight: 700;
