@@ -455,6 +455,6 @@ MEDIA BEFORE 340px
 .................................................... */
 @media (max-width:340px) {
 	.visible {
-		display: none;
+		font-size: 13px;
 	}
 }
