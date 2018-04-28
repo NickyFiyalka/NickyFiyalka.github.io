@@ -2,6 +2,7 @@
 	font-family: 'Merriweather', serif;
 	font-family: 'Libre Baskerville', serif;
 */
+
 html {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 16px;
@@ -10,7 +11,8 @@ html {
 }
 
 img {
-	display: inline-block; /*Відміна стандартних відступів картинки*/
+	display: inline-block;
+	/*Відміна стандартних відступів картинки*/
 }
 
 a {
@@ -27,14 +29,14 @@ GRID
 Переписати сітку на флексбоксах!!!
 ...................................................
 .................................................... */
+
 .section {
 	width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.row {
-}
+.row {}
 
 .row:after {
 	clear: both;
@@ -57,23 +59,35 @@ GRID
 HEADER
 ...................................................
 .................................................... */
+
 header {
-	background: #003254;	/*	Колір фону при відсутності картинки*/
-	background-image: url("../img/bg/bg.jpg");	/*Фонова картинка*/
-	background-repeat: no-repeat;	/*	Скасування повторення картинки*/
-	background-position: center;	/*Позиціювання*/
-	background-size: cover;	/*Масштабування зображення зі збереженням пропорцій по всій ширині і висоті блоку*/
-	height: 100vh; /*Висота header на всю висоту видимої сторінки*/
+	background: #003254;
+	/*	Колір фону при відсутності картинки*/
+	background-image: url("../img/bg/bg.jpg");
+	/*Фонова картинка*/
+	background-repeat: no-repeat;
+	/*	Скасування повторення картинки*/
+	background-position: center;
+	/*Позиціювання*/
+	background-size: cover;
+	/*Масштабування зображення зі збереженням пропорцій по всій ширині і висоті блоку*/
+	height: 100vh;
+	/*Висота header на всю висоту видимої сторінки*/
 	min-height: 400px;
 	color: #FFF;
-	text-align: center;	/*Позиціювання тексту по середині*/
-
+	text-align: center;
+	/*Позиціювання тексту по середині*/
 	/*FLEX*/
-	display: flex;	/*Позиціювання елекментів flex*/
-	flex-direction: column; /*Позиціювання стрічкою*/
-	align-items: center;	/*Вирівнювання блоків по вертикалі*/
-	justify-content: center;	/*Вирівнювання блоків по горизонталі*/
-	position: relative; 	/*Позиціювання */
+	display: flex;
+	/*Позиціювання елекментів flex*/
+	flex-direction: column;
+	/*Позиціювання стрічкою*/
+	align-items: center;
+	/*Вирівнювання блоків по вертикалі*/
+	justify-content: center;
+	/*Вирівнювання блоків по горизонталі*/
+	position: relative;
+	/*Позиціювання */
 }
 
 .headerTitle {
@@ -90,9 +104,11 @@ header {
 
 .headerArrow {
 	font-size: 48px;
-	position: absolute;  /*Позиціювання елемента відносно видимої частини сторінки*/
+	position: absolute;
+	/*Позиціювання елемента відносно видимої частини сторінки*/
 	bottom: 1px;
-	left: calc(50% - 24px); /*Вирівнювання елемента точно по середині*/
+	left: calc(50% - 24px);
+	/*Вирівнювання елемента точно по середині*/
 }
 
 .headerArrow a {
@@ -105,6 +121,7 @@ header {
 PORTFOLIO
 ...................................................
 .................................................... */
+
 .portfolio {
 	padding: 70px 0 100px 0;
 }
@@ -147,7 +164,8 @@ PORTFOLIO
 }
 
 .portfolio-Item-Text p {
-	margin-top: 0;	/*margin-bottom: 15px;*/
+	margin-top: 0;
+	/*margin-bottom: 15px;*/
 }
 
 /* ...................................................
@@ -155,6 +173,7 @@ PORTFOLIO
 PORFOLIO SINGLE PAGE
 ...................................................
 .................................................... */
+
 .portfolio-single-page {
 	padding: 50px 0;
 	text-align: center;
@@ -190,11 +209,11 @@ PORFOLIO SINGLE PAGE
 FOOTER
 ...................................................
 .................................................... */
+
 footer {
 	background-color: #061634;
 	color: #6479a2;
-	padding-top: 90px;
-	padding-bottom: 110px;
+	padding: 90px 0;
 }
 
 footer p {
@@ -276,11 +295,11 @@ div.footerSocialIcons a:nth-child(5):hover {
 MEDIA
 ...................................................
 .................................................... */
-@media (max-width:1160px)  {
+
+@media (max-width:1160px) {
 	.section {
 		width: 100%;
 	}
-
 	.col-4 {
 		width: 50%;
 		box-sizing: border-box;
@@ -289,50 +308,40 @@ MEDIA
 		padding: 0 15px;
 		text-align: center;
 	}
-
 	.col-4:last-child {
 		width: 100%;
 	}
-
 	.col-4 .footerSocialIcons {
 		margin: 0 auto;
 	}
-
 	header {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-
 	.headerTitle {
 		font-size: 44px;
 		line-height: 48px;
 		margin-bottom: 15px;
 	}
-
 	.headerText {
 		font-size: 22px;
 		line-height: 38px;
 	}
-	
 	.headerArrow {
 		font-size: 40px;
 		left: calc(50% - 20px);
 	}
-
 	.portfolio {
 		padding-top: 40px;
 		padding-bottom: 50px;
 	}
-
 	.porfolioTitle {
 		font-size: 36px;
 	}
-
 	footer {
 		padding-top: 70px;
 		padding-bottom: 30px;
 	}
-
 }
 
 /* ...................................................
@@ -342,12 +351,9 @@ MEDIA BEFORE 768px
 .................................................... */
 
 @media (max-width:768px) {
-
-
 	.section {
 		width: 100%;
 	}
-
 	.col-4 {
 		width: 100%;
 		box-sizing: border-box;
@@ -356,62 +362,48 @@ MEDIA BEFORE 768px
 		padding: 0 15px;
 		text-align: center;
 	}
-
 	.col-4 .footerSocialIcons {
 		margin: 0 auto;
 	}
-
 	.headerTitle {
 		font-size: 35px;
 		line-height: 34px;
 	}
-
 	.headerText {
 		font-size: 20px;
 		line-height: 34px;
 	}
-
 	.headerArrow {
 		font-size: 32px;
 		left: calc(50% - 16px);
 	}
-	
 	.portfolio {
 		padding-top: 24px;
 	}
-	
 	.porfolioTitle {
 		font-size: 38px;
 		margin-bottom: 24px;
 	}
-
-
 	.col-4 {
 		margin-bottom: 30px;
 	}
-
 	.portfolio-Item-Img {
 		margin-bottom: 10px;
 	}
-
 	footer {
 		padding-top: 40px;
 		padding-bottom: 10px;
 	}
-	
 	p.footerName {
 		margin-bottom: 8px;
 	}
-
 	footer p {
 		margin-bottom: 5px;
 	}
-
 	.button {
 		margin-bottom: 10px;
 	}
 }
-
 
 /* ...................................................
 ...................................................
@@ -424,48 +416,38 @@ MEDIA BEFORE 425px
 		font-size: 30px;
 		line-height: 30px;
 	}
-
 	.headerText {
 		font-size: 18px;
 		line-height: 30px;
 	}
-
 	.headerArrow {
 		font-size: 26px;
 		left: calc(50% - 13px);
 	}
-	
 	.portfolio {
 		padding-top: 20px;
 		padding-bottom: 5px;
 	}
-	
 	.porfolioTitle {
 		font-size: 30px;
 		margin-bottom: 20px;
 	}
-
 	.col-4 {
 		margin-bottom: 25px;
 	}
-
 	.portfolio-Item-Img {
 		margin-bottom: 5px;
 	}
-
 	footer {
 		padding-top: 30px;
 		padding-bottom: 0px;
 	}
-	
 	p.footerName {
 		margin-bottom: 3px;
 	}
-
 	footer p {
 		margin-bottom: 0;
 	}
-
 	.button {
 		margin-bottom: 5px;
 	}
@@ -476,6 +458,7 @@ MEDIA BEFORE 425px
 MEDIA BEFORE 340px
 ...................................................
 .................................................... */
+
 @media (max-width:340px) {
 	.visible {
 		font-size: 13px;
