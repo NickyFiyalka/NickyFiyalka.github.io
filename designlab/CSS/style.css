@@ -1,0 +1,175 @@
+html {
+   font-size: 1em;
+}
+
+header h1,
+header p,
+main h2,
+.mainContent h3,
+footer h3 {
+   text-transform: uppercase;
+   font-family: 'Lato', sans-serif;
+}
+
+/* 
+##############################
+
+HEADER 
+
+############################## 
+*/
+
+header {
+   /* position: relative; */
+   background: #003254;
+   background-image: url("../IMG/bg.jpg");
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: cover;
+   height: 100vh;
+   color: #FFF;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.logoAndText {
+   width: 750px;
+}
+
+.logo img {
+   width: 5em;
+}
+
+.headerTitle h1 {
+   font-size: 4em;
+   margin: 50px 0;
+   letter-spacing: 0.2em;
+   font-weight: 700;
+}
+
+.headerText p {
+   font-size: 1.08em;
+   line-height: 2em;
+   font-weight: 400;
+   padding: 0 4em;
+}
+
+.headerArrow {
+   position: absolute;
+   bottom: 30px;
+}
+
+/* 
+##############################
+
+MAIN
+
+############################## 
+*/
+
+.mainContent {
+   position: relative;
+   top: 100px;
+   margin: 0 auto 150px;
+   border: 1px solid #000;
+   width: 900px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.mainContent h2 {
+   background: #fff;
+   margin: -20px 0 100px;
+   padding: 0 10px;
+   width: 400px;
+   font-size: 2.5em;
+   letter-spacing: 0.1em;
+   font-weight: 700;
+}
+
+.mainContent h3 {
+   font-size: 1.5em;
+   font-weight: 700;
+   letter-spacing: 0.1em;
+   margin: 1em 0;
+}
+
+.mainContent p {
+   font-size: 1em;
+   font-weight: 300;
+   line-height: 1.5em;
+   padding: 0 9em;
+   margin-bottom: 6em;
+}
+
+/* 
+##############################
+
+FOOTER
+
+############################## 
+*/
+
+footer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* flex-flow: column wrap; */
+   justify-content: space-between;
+}
+
+div.footerTopworkz,
+div.footerMarket,
+div.footerWorktop,
+div.footerKyiv {
+   width: 30%;
+}
+
+div.footerJoint,
+div.footerLable {
+   width: calc(40% - 10px);
+}
+
+footer div {
+   margin-top: 5px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+footer h3 {
+   color: #fff;
+   position: relative;
+   padding: 200px 0 20px 20px;
+   margin: 0;
+}
+
+div.footerTopworkz {
+   background-image: url("../IMG/example1.png");
+}
+
+div.footerJoint {
+   background-image: url("../IMG/example2.png");
+}
+
+div.footerMarket {
+   background-image: url("../IMG/example3.png");
+}
+
+div.footerWorktop {
+   background-image: url("../IMG/example4.png");
+}
+
+div.footerLable {
+   background-image: url("../IMG/example5.png");
+}
+
+div.footerKyiv {
+   background-image: url("../IMG/example6.png");
+}

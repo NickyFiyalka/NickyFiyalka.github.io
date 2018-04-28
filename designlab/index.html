@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Working with design lab</title>
+      <link rel="stylesheet" href="CSS/normalize.css">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <div class="logoAndText">
+                        <div class="logo">
+                              <img src="IMG/Ellipse.png" alt="logo">
+                        </div>
+                        <div class="headerTitle">
+                              <h1>working
+                                    <br>with design lab</h1>
+                        </div>
+                        <div class="headerText">
+                              <p>We’ve been helping startups launch and grow their businesses. We help you to fill the gap between
+                                    development,
+                                    <br> design and product management.</p>
+                        </div>
+                  </div>
+
+                  <div id="menu" class="headerArrow">
+                        <a href="#whatWeDo">
+                              <img src="IMG/link.png" alt="link to main">
+                        </a>
+                  </div>
+            </header>
+            <main id="whatWeDo">
+                  <div class="mainContent">
+                        <h2>what we do</h2>
+                        <div class="contentDesign">
+                              <img src="IMG/imgMainDesign.png" alt="img for design block">
+                              <h3>design</h3>
+                              <p>Our design practice offers a full range of services including branding strategy,
+                                    <br> interaction and visual design and user experience testing.
+                                    <br> Throughout your project, our designers create and implement visual designs and workflows,
+                                    solicit user feedback, and work with you to make sure what gets built is what is needed.
+                              </p>
+                        </div>
+                        <div class="contentDevelopment">
+                              <img src="IMG/imgMainDevelopment.png" alt="img for development block">
+                              <h3>development</h3>
+                              <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                                    They collaborate with your team to write, test, and improve code on a daily basis, using
+                                    proven practices such as test-driven development and pair programing.</p>
+                        </div>
+                        <div class="contentManagement">
+                              <img src="IMG/imgMainManagement.png" alt="img for management block">
+                              <h3>product management</h3>
+                              <p>Planning and development is iterative. Because we are constantly coding and testing, the products
+                                    we build are always ready to go live. This iterative process allows for changes as business
+                                    requirements evolve.
+                              </p>
+                        </div>
+                  </div>
+
+            </main>
+            <footer>
+                  <div class="footerTopworkz">
+                        <h3>topworkz</h3>
+                  </div>
+                  <div class="footerJoint">
+                        <h3>joint</h3>
+                  </div>
+                  <div class="footerMarket">
+                        <h3>market</h3>
+                  </div>
+                  <div class="footerWorktop">
+                        <h3>worktop</h3>
+                  </div>
+                  <div class="footerLable">
+                        <h3>lable</h3>
+                  </div>
+                  <div class="footerKyiv">
+                        <h3>kyiv</h3>
+                  </div>
+            </footer>
+      </div>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script type="text/javascript">
+            $(document).ready(function () {
+                  $("#menu").on("click", "a", function (event) {
+                        event.preventDefault();
+                        var id = $(this).attr('href'),
+                              top = $(id).offset().top;
+                        $('body,html').animate({
+                              scrollTop: top
+                        }, 1000);
+                  });
+            });
+      </script>
+
+</body>
+
+</html>
