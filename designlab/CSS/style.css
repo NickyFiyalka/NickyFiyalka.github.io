@@ -1,5 +1,5 @@
 html {
-   font-size: 1em;
+   font-size: 6px;
 }
 
 header h1,
@@ -20,46 +20,46 @@ HEADER
 */
 
 header {
-   /* position: relative; */
    background: #003254;
    background-image: url("../IMG/bg.jpg");
    background-repeat: no-repeat;
    background-position: right;
    background-size: cover;
    height: 100vh;
+   min-width: 320px;
    color: #FFF;
    text-align: center;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
 }
 
 .logoAndText {
-   width: 750px;
+   width: 320px;
 }
 
 .logo img {
-   width: 5em;
+   width: 10em;
 }
 
 .headerTitle h1 {
-   font-size: 4em;
-   margin: 50px 0;
+   font-size: 4.4em;
+   margin: 70px 0;
    letter-spacing: 0.2em;
    font-weight: 700;
 }
 
 .headerText p {
-   font-size: 1.08em;
+   font-size: 2em;
    line-height: 2em;
    font-weight: 400;
-   padding: 0 4em;
+   padding: 0 1em 7em;
 }
 
 .headerArrow {
    position: absolute;
-   bottom: 30px;
+   bottom: 20px;
 }
 
 /* 
@@ -72,10 +72,11 @@ MAIN
 
 .mainContent {
    position: relative;
-   top: 100px;
-   margin: 0 auto 150px;
+   top: 40px;
+   margin: 0 auto 80px;
    border: 1px solid #000;
-   width: 900px;
+   min-width: 320px;
+   width: 300px;
    text-align: center;
    display: flex;
    flex-direction: column;
@@ -85,27 +86,27 @@ MAIN
 
 .mainContent h2 {
    background: #fff;
-   margin: -20px 0 100px;
+   margin: -15px 0 50px;
    padding: 0 10px;
-   width: 400px;
-   font-size: 2.5em;
+   width: 200px;
+   font-size: 4em;
    letter-spacing: 0.1em;
    font-weight: 700;
 }
 
 .mainContent h3 {
-   font-size: 1.5em;
+   font-size: 3.5em;
    font-weight: 700;
    letter-spacing: 0.1em;
    margin: 1em 0;
 }
 
 .mainContent p {
-   font-size: 1em;
+   font-size: 2em;
    font-weight: 300;
    line-height: 1.5em;
-   padding: 0 9em;
-   margin-bottom: 6em;
+   padding: 0 1em;
+   margin-bottom: 4em;
 }
 
 /* 
@@ -120,6 +121,7 @@ footer {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
+   min-width: 320px;
    /* flex-flow: column wrap; */
    justify-content: space-between;
 }
@@ -127,14 +129,16 @@ footer {
 div.footerTopworkz,
 div.footerMarket,
 div.footerWorktop,
-div.footerKyiv {
-   width: 30%;
-}
-
+div.footerKyiv,
 div.footerJoint,
 div.footerLable {
-   width: calc(40% - 10px);
+   width: 100%;
 }
+
+/* div.footerJoint,
+div.footerLable {
+   width: calc(40% - 10px);
+} */
 
 footer div {
    margin-top: 5px;
@@ -145,6 +149,7 @@ footer div {
 
 footer h3 {
    color: #fff;
+   font-size: 3.5em;
    position: relative;
    padding: 200px 0 20px 20px;
    margin: 0;
@@ -172,4 +177,92 @@ div.footerLable {
 
 div.footerKyiv {
    background-image: url("../IMG/example6.png");
+}
+
+/* 
+##############################
+
+MEDIA
+
+############################## 
+*/
+
+@media (min-width: 700px) {
+   html {
+      font-size: 10px;
+   }
+   .logoAndText {
+      width: 600px;
+   }
+   .mainContent {
+      width: 600px;
+      top: 80px;
+   }
+   .mainContent h2 {
+      margin: -25px 0 50px;
+      width: 400px;
+      margin-bottom: 100px;
+   }
+   footer {
+      margin-top: 150px;
+   }
+   div.footerTopworkz,
+   div.footerMarket,
+   div.footerWorktop,
+   div.footerKyiv,
+   div.footerJoint,
+   div.footerLable {
+      width: calc(50% - 2.5px);
+   }
+}
+
+@media (min-width: 1100px) {
+   html {
+      font-size: 16px;
+   }
+   .logoAndText {
+      width: 750px;
+   }
+   .logo img {
+      width: 5em;
+   }
+   .headerTitle h1 {
+      font-size: 4em;
+      margin: 50px 0;
+   }
+   .headerText p {
+      font-size: 1.08em;
+      padding: 0 4em;
+   }
+   .mainContent {
+      top: 100px;
+      margin: 0 auto 150px;
+      width: 900px;
+   }
+   .mainContent h2 {
+      margin: -20px 0 100px;
+      width: 400px;
+      font-size: 2.5em;
+   }
+   .mainContent h3 {
+      font-size: 1.5em;
+   }
+   .mainContent p {
+      font-size: 1em;
+      padding: 0 9em;
+      margin-bottom: 6em;
+   }
+   div.footerTopworkz,
+   div.footerMarket,
+   div.footerWorktop,
+   div.footerKyiv {
+      width: 30%;
+   }
+   div.footerJoint,
+   div.footerLable {
+      width: calc(40% - 10px);
+   }
+   footer h3 {
+      font-size: 1.8em;
+   }
 }
